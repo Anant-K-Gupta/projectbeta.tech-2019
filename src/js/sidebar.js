@@ -55,7 +55,7 @@ function openCloseTabs(i) {
 // Countdown
 function countdown () {
 
-	var end = new Date('08/18/2018 0:0 AM');
+	var end = new Date('10/04/2019 0:0 AM');
 
 	var _second = 1000;
 	var _minute = _second * 60;
