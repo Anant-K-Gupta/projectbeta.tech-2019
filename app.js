@@ -18,4 +18,4 @@ app.set('views', __dirname + '/views/pages');
 const home = require('./routes/index');
 app.use('/', home);
 
-app.listen(process.env.PORT || 4000);
+app.listen(process.env.PORT || 2000);
