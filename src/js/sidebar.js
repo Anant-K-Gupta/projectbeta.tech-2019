@@ -52,10 +52,10 @@ function openCloseTabs(i) {
 	}
 }
 
-// Countdown
+//Countdown
 function countdown () {
 
-	var end = new Date('10/04/2019 0:0 AM');
+	var end = new Date("2019-10-04T13:0:0")
 
 	var _second = 1000;
 	var _minute = _second * 60;

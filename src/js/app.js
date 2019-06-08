@@ -33,7 +33,7 @@
 			.state('index', {
 				url: '/',
 				templateUrl: 'partials/home.html',
-				data: { pageTitle: 'ProjectBeta 2018' },
+				data: { pageTitle: 'ProjectBeta 2019' },
 				onEnter: function() {
 					uiContainer.style.justifyContent = "flex-start";
 				}
@@ -42,13 +42,13 @@
 			.state('404', {
 				url: '/404',
 				templateUrl: 'partials/404.html',
-				data: { pageTitle: '404 \u00B7 ProjectBeta 2018' }
+				data: { pageTitle: '404 \u00B7 ProjectBeta 2019' }
 			})
 
 			.state('home', {
 				url: '/home',
 				templateUrl: 'partials/home.html',
-				data: { pageTitle: 'ProjectBeta 2018' },
+				data: { pageTitle: 'ProjectBeta 2019' },
 				onEnter: function() {
 					if (isMobile) {
 						setTimeout(sidebarClose, 100);
