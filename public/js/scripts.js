@@ -135,7 +135,7 @@
 				mainEl.scroll(0, 0);
 				uiContainer.style.justifyContent = 'space-between'
 			}
-		}).state('betaTest', {
+		}).state('betatest', {
 			url: '/betatest',
 			templateUrl: 'partials/betatest.html',
 			data: {
