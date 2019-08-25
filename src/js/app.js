@@ -44,7 +44,20 @@
 				templateUrl: 'partials/404.html',
 				data: { pageTitle: '404 \u00B7 ProjectBeta 2019' }
 			})
-
+		
+			.state('leaderboard', {
+				url: '/leaderboard',
+				templateUrl: 'partials/leaderboard.html',
+				data: { pageTitle: 'leaderboard \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
+		
 			.state('home', {
 				url: '/home',
 				templateUrl: 'partials/home.html',
