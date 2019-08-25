@@ -148,6 +148,19 @@
 				mainEl.scroll(0, 0);
 				uiContainer.style.justifyContent = 'space-between'
 			}
+		}).state('leaderboard', {
+			url: '/leaderboard',
+			templateUrl: 'partials/leaderboard.html',
+			data: {
+				pageTitle: 'Leaderboard \xB7 ProjectBeta'
+			},
+			onEnter: function onEnter() {
+				if (isMobile) {
+					setTimeout(sidebarClose, 100)
+				}
+				mainEl.scroll(0, 0);
+				uiContainer.style.justifyContent = 'space-between'
+			}
 		});
 		$locationProvider.html5Mode(true)
 	})
