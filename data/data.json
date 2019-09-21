@@ -1,0 +1,15 @@
+{
+    "sessionSecret": "MuleILoveYou",
+    "auth": {
+        "user": "projectbeta@sanskritischool.edu.in",
+        "pass": "plsgetsp0ns0rship"
+    },
+    "mailOpts": {
+        "from": "projectbeta@sanskritischool.edu.in",
+        "to": {
+            "confirm": "projectbeta+registration@sanskritischool.edu.in",
+            "request": "projectbeta+request@sanskritischool.edu.in",
+            "attempt": "projectbeta+attempt@sanskritischool.edu.in"
+        }
+    }
+}
