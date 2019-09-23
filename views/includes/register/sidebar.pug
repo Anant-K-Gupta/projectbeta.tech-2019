@@ -13,10 +13,10 @@ section.sidebar.open
 
         #heading.flex
 
-            a(href="home" target="_self").flex.image
+            a(href="home").flex.image
                 img(src="/img/logo-white.svg")
 
-            a(href="home" target="_self").h1
+            a(href="home").h1
                 h1
                     span.project Project
                     span.beta Beta
@@ -35,47 +35,44 @@ section.sidebar.open
                     ul
 
                         li.level1
-                            a(href="home" target="_self").yellow home
+                            a(href="/home").yellow home
 
                         li.level1
-                            a(href="team" target="_self").blue team
+                            a(href="/team").blue team
                         li.level1
-                            a(href="alumni" target="_self").red alumni
+                            a(href="/alumni").red alumni
 
                         li.level1
-                            a.green.level2#eventTab
+                            a(href="#").green.level2#eventTab
                                 #eventsTriangle.triangle.open
                                 |events
 
                         li.level2.events
-                            a(href="events#function-overload" target="_self").white
-                                | Function Overload
+                            a(href="events#beta-test").white
+                                | Beta test
 
                         li.level2.events
-                            a(href="events#rush-b" target="_self").white
+                            a(href="events#in-vested-interests").white
+                                | (in)Vested Interests
+
+                        li.level2.events
+                            a(href="events#function-overload").white
+                                | func(64 Wit)
+
+                        li.level2.events
+                            a(href="events#rush-b").white
                                 | Rush_B
 
-                        li.level2.events
-                            a(href="events#monochrome" target="_self").white
-                                | Monochrome
-
-                        li.level2.events
-                            a(href="events#64-wit" target="_self").white
-                                | 64wit
-
-                        li.level2.events
-                            a(href="events#in-vested-interests" target="_self").white
-                                | (In)Vested Interests
-
-                        li.level2.events
-                            a(href="events#kilo-hertz" target="_self").white
-                                | KiloHertz
+                        li.level1
+                            a(href="/contact").yellow contact
 
                         li.level1
-                            a(href="contact" target="_self").yellow contact
-
+                            a(href="/betatest").blue BetaTest
+                            
                         li.level1
-                            a(href="/register" target="_self").blue register
+                            a(href="/leaderboard").red leaderboard
+                        li.level1
+                            a(href="/register" target="_self").green register
 
             .subject.flex
 
@@ -86,8 +83,8 @@ section.sidebar.open
 
                 ul.white
 
-                    a(href="/register" target="_self")
-                        li &mdash;&nbsp;&nbsp;&nbsp;Register for ProjectBeta 2.0
+                    a(href="register")
+                        li &mdash;&nbsp;&nbsp;&nbsp;Register for ProjectBeta 3.0
 
             .subject.flex
 
@@ -138,5 +135,5 @@ section.sidebar.open
         
         section#footer.flex
 
-            p © 2018 projectbeta
+            p © 2019 projectbeta
             p change the status quo
