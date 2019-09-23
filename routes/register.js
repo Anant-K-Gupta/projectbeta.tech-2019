@@ -2,8 +2,14 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
-const data = require('../data/data.json');
-const inviteCodes = require('../data/codes.json');
+const {
+    EMAIL_ID,
+    EMAIL_PASS,
+    EMAIL_ID_CONFIRM,
+    EMAIL_ID_REQUEST,
+    EMAIL_ID_ATTEMPT,
+    CODES
+} = process.env;
 
 // REGISTER PAGE
 router.get('/', (req, res, next) => {
@@ -20,11 +26,11 @@ router.post('/', (req, res, next) => {
         port: 465,
         secure: true,
         auth: {
-            user: data.auth.user,
-            pass: data.auth.pass
+            user: EMAIL_ID,
+            pass: EMAIL_PASS
         }
     });
-    const codes = inviteCodes.codes;
+    const codes = JSON.parse(CODES);
 
     const search = (input, array) => {
         for (var i = 0; i < array.length; i++) {
@@ -43,8 +49,8 @@ router.post('/', (req, res, next) => {
             console.log('yay');
 
             const mailOpts = {
-                from: data.mailOpts.from,
-                to: data.mailOpts.to.attempt,
+                from: EMAIL_ID,
+                to: EMAIL_ID_ATTEMPT,
                 subject: `New Login from ${school.school}`,
                 html: `
                     <p><strong>School Name</strong>: ${school.school}</p>
@@ -75,8 +81,8 @@ router.post('/', (req, res, next) => {
         console.log('form submitted');
         const info = req.body;
         const mailOpts = {
-            from: data.mailOpts.from,
-            to: data.mailOpts.to.request,
+            from: EMAIL_ID,
+            to: EMAIL_ID_REQUEST,
             subject: `ProjectBeta 2.0: New Request from ${info['school-name']}`,
             html: `
                 <p><strong>School Name</strong>: ${info['school-name']}</p>
@@ -104,8 +110,8 @@ router.post('/', (req, res, next) => {
         console.log('form submitted');
         const info = req.body;
         const mailOpts = {
-            from: data.mailOpts.from,
-            to: data.mailOpts.to.confirm,
+            from: EMAIL_ID,
+            to: EMAIL_ID_CONFIRM,
             subject: `ProjectBeta 2.0: New Registration from ${info.school}`,
             html: `
                 <p><strong>School Name</strong>: ${info.school}</p>
