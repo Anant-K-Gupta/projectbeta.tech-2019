@@ -30,11 +30,11 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views/pages');
 
-const home = require('./routes/index');
-app.use('/', home);
-
 const register = require('./routes/register');
 app.use('/register', register);
+
+const home = require('./routes/index');
+app.use('/', home);
 
 //404
 app.use((res, req, next) => {

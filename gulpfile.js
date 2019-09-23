@@ -51,14 +51,3 @@ gulp.task('js', function() {
 	.pipe(concat('scripts.js'))
 	.pipe(gulp.dest('public/js'));
 });
-
-gulp.task('deploy', function() {
-	return surge({
-		project: './dist/',
-		domain: 'projectbeta.surge.sh'
-	});
-});
-
-gulp.task('default', ['html', 'css', 'js'], function () {
-	gulp.watch(['stylesheets/**/*.styl', 'views/**/*.pug', 'src/js/**/*.js'], ['html', 'css', 'js']);
-});
