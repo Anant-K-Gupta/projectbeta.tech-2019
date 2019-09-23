@@ -83,7 +83,7 @@ router.post('/', (req, res, next) => {
         const mailOpts = {
             from: EMAIL_ID,
             to: EMAIL_ID_REQUEST,
-            subject: `ProjectBeta 2.0: New Request from ${info['school-name']}`,
+            subject: `ProjectBeta 3.0: New Request from ${info['school-name']}`,
             html: `
                 <p><strong>School Name</strong>: ${info['school-name']}</p>
                 <p><strong>Contact email</strong>: ${info['contact-email']}</p>
@@ -112,7 +112,7 @@ router.post('/', (req, res, next) => {
         const mailOpts = {
             from: EMAIL_ID,
             to: EMAIL_ID_CONFIRM,
-            subject: `ProjectBeta 2.0: New Registration from ${info.school}`,
+            subject: `ProjectBeta 3.0: New Registration from ${info.school}`,
             html: `
                 <p><strong>School Name</strong>: ${info.school}</p>
                 <p><strong>Incharge name</strong>: ${info.incharge_name}</p>
