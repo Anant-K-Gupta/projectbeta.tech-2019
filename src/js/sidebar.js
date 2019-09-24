@@ -1,6 +1,4 @@
 // Open-Close Files
-alert("Test");
-
 // var aboutButton = document.querySelector("#files li:nth-child(2)");
 var eventsButton = document.querySelector("#files li:nth-child(4)");
 
