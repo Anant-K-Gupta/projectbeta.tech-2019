@@ -172,7 +172,7 @@ router.post('/', (req, res, next) => {
                 console.log('yayy form emailed');
                 return res.render('register', {
                     emailed: true,
-                    msg: 'Thank you for confirming your participation! See you on 18th August!'
+                    msg: 'Thank you for confirming your participation! See you on 4th October!'
                 })
             }
         });
