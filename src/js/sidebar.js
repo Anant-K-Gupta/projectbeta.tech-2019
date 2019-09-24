@@ -1,5 +1,5 @@
 // Open-Close Files
-
+alert("Test");
 
 // var aboutButton = document.querySelector("#files li:nth-child(2)");
 var eventsButton = document.querySelector("#files li:nth-child(4)");
@@ -54,7 +54,6 @@ function openCloseTabs(i) {
 
 //Countdown
 function countdown () {
-	console.log("BruH what now?");
 	var end = new Date("2019-10-04T08:30:00+05:30")
 
 	var _second = 1000;
