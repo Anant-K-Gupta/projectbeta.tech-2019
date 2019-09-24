@@ -60,10 +60,10 @@ function countdown () {
 	var _day = _hour * 24;
 	var timer;
 
-	var daysElement = document.querySelector('.days p');
-	var hoursElement = document.querySelector('.hours p');
-	var minutesElement = document.querySelector('.minutes p');
-	var secondsElement = document.querySelector('.seconds p');
+	var daysElement = document.querySelector('.day p');
+	var hoursElement = document.querySelector('.hour p');
+	var minutesElement = document.querySelector('.minute p');
+	var secondsElement = document.querySelector('.second p');
 
 	function showRemaining() {
 		var now = new Date();
