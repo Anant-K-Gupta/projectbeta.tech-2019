@@ -119,24 +119,19 @@ router.post('/', (req, res, next) => {
                 <p><strong>Incharge email</strong>: ${info.incharge_email}</p>
                 <p><strong>Incharge phone number</strong>: ${info.incharge_number}</p>
                 <hr>
-                <h2>Function Overload</h2>
+                <h2>func(64 Wit)</h2>
                 <h3>Participant 1:</h3>
                 <p><strong>Name</strong>: ${info.fo_p1_name}</p>
                 <p><strong>Email</strong>: ${info.fo_p1_email}</p>
                 <h3>Participant 2:</h3>
                 <p><strong>Name</strong>: ${info.fo_p2_name}</p>
                 <p><strong>Email</strong>: ${info.fo_p2_email}</p>
-                <hr>
-                <h2>Monochrome</h2>
-                <h3>Participant 1:</h3>
-                <p><strong>Name</strong>: ${info.mc_p1_name}</p>
-                <p><strong>Email</strong>: ${info.mc_p1_email}</p>
-                <h3>Participant 2:</h3>
-                <p><strong>Name</strong>: ${info.mc_p2_name}</p>
-                <p><strong>Email</strong>: ${info.mc_p2_email}</p>
                 <h3>Participant 3:</h3>
-                <p><strong>Name</strong>: ${info.mc_p3_name}</p>
-                <p><strong>Email</strong>: ${info.mc_p3_email}</p>
+                <p><strong>Name</strong>: ${info.fo_p3_name}</p>
+                <p><strong>Email</strong>: ${info.fo_p3_email}</p>
+                <h3>Participant 4:</h3>
+                <p><strong>Name</strong>: ${info.fo_p4_name}</p>
+                <p><strong>Email</strong>: ${info.fo_p4_email}</p>
                 <hr>
                 <h2>Rush_B</h2>
                 <h3>Participant 1:</h3>
@@ -155,14 +150,6 @@ router.post('/', (req, res, next) => {
                 <p><strong>Name</strong>: ${info.rb_p5_name}</p>
                 <p><strong>Email</strong>: ${info.rb_p5_email}</p>
                 <hr>
-                <h2>64Wit</h2>
-                <h3>Participant 1:</h3>
-                <p><strong>Name</strong>: ${info.sw_p1_name}</p>
-                <p><strong>Email</strong>: ${info.sw_p1_email}</p>
-                <h3>Participant 2:</h3>
-                <p><strong>Name</strong>: ${info.sw_p2_name}</p>
-                <p><strong>Email</strong>: ${info.sw_p2_email}</p>
-                <hr>
                 <h2>(In)Vested Interests</h2>
                 <h3>Participant 1:</h3>
                 <p><strong>Name</strong>: ${info.ivi_p1_name}</p>
@@ -170,17 +157,6 @@ router.post('/', (req, res, next) => {
                 <h3>Participant 2:</h3>
                 <p><strong>Name</strong>: ${info.ivi_p2_name}</p>
                 <p><strong>Email</strong>: ${info.ivi_p2_email}</p>
-                <h3>Participant 3:</h3>
-                <p><strong>Name</strong>: ${info.ivi_p3_name}</p>
-                <p><strong>Email</strong>: ${info.ivi_p3_email}</p>
-                <hr>
-                <h2>KiloHertz</h2>
-                <h3>Participant 1:</h3>
-                <p><strong>Name</strong>: ${info.kh_p1_name}</p>
-                <p><strong>Email</strong>: ${info.kh_p1_email}</p>
-                <h3>Participant 2:</h3>
-                <p><strong>Name</strong>: ${info.kh_p2_name}</p>
-                <p><strong>Email</strong>: ${info.kh_p2_email}</p>
                 <hr>
                 Timestamp: ${new Date()}
             `
