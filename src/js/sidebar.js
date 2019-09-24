@@ -54,7 +54,7 @@ function openCloseTabs(i) {
 
 //Countdown
 function countdown () {
-
+	console.log("BruH what now?");
 	var end = new Date("Fri Oct 04 2019 08:30:00 GMT+0530 (India Standard Time)")
 
 	var _second = 1000;
