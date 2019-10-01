@@ -81,6 +81,18 @@
 					uiContainer.style.justifyContent = "flex-start";
 				}
 			})
+			.state('baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa', {
+				url: '/baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa',
+				templateUrl: 'partials/baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa.html',
+				data: { pageTitle: 'ProjectBeta 2019' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "flex-start";
+				}
+			})
 
 			.state('about', {
 				url: '/about',
