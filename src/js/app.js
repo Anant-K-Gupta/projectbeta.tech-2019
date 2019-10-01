@@ -57,7 +57,7 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			})
-			.state('betatest', {
+			.state('BetaTest', {
 				url: '/betatest',
 				templateUrl: 'partials/betatest.html',
 				data: { pageTitle: 'leaderboard \u00B7 ProjectBeta' },
