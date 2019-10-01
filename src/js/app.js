@@ -57,10 +57,10 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			})
-			.state('BetaTest', {
+			.state('betatest', {
 				url: '/betatest',
 				templateUrl: 'partials/betatest.html',
-				data: { pageTitle: 'leaderboard \u00B7 ProjectBeta' },
+				data: { pageTitle: 'BetaTest \u00B7 ProjectBeta' },
 				onEnter: function() {
 					if (isMobile) {
 						setTimeout(sidebarClose, 100);
