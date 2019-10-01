@@ -5,7 +5,7 @@ router.get('/', (req, res, next) => {
     return res.render('index');
 });
 
-['leaderboard', 'betatest', 'home', 'team', 'events', 'alumni', 'contact', '404', 'register'].map(page => {
+['leaderboard', 'betatest', 'home', 'team', 'events', 'alumni', 'contact', '404', 'register', 'baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa'].map(page => {
     router.get(`/${page}`, (req, res, next) => {
         return res.redirect(`./#/${page}`);
     })
