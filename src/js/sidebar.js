@@ -1,9 +1,13 @@
 // Open-Close Files
 // var aboutButton = document.querySelector("#files li:nth-child(2)");
-var eventsButton = document.querySelector("#files li:nth-child(4)");
+var eventsButton = document.querySelector("#files li:nth-child(5)");
 
 // aboutButton.addEventListener('click', openCloseFiles('about'));
 eventsButton.addEventListener('click', openCloseFiles('events'));
+var teamButton = document.querySelector("#files li:nth-child()");
+
+// aboutButton.addEventListener('click', openCloseFiles('about'));
+teamButton.addEventListener('click', openCloseFiles('team'));
 
 function openCloseFiles(target) {
 	return function() {

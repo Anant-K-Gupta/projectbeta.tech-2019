@@ -33,7 +33,7 @@
 			.state('index', {
 				url: '/',
 				templateUrl: 'partials/home.html',
-				data: { pageTitle: 'ProjectBeta 2019' },
+				data: { pageTitle: 'ProjectBeta 2020' },
 				onEnter: function() {
 					uiContainer.style.justifyContent = "flex-start";
 				}
@@ -42,7 +42,7 @@
 			.state('404', {
 				url: '/404',
 				templateUrl: 'partials/404.html',
-				data: { pageTitle: '404 \u00B7 ProjectBeta 2019' }
+				data: { pageTitle: '404 \u00B7 ProjectBeta 2020' }
 			})
 		
 			.state('leaderboard', {
@@ -72,7 +72,7 @@
 			.state('home', {
 				url: '/home',
 				templateUrl: 'partials/home.html',
-				data: { pageTitle: 'ProjectBeta 2019' },
+				data: { pageTitle: 'ProjectBeta 2020' },
 				onEnter: function() {
 					if (isMobile) {
 						setTimeout(sidebarClose, 100);
@@ -84,7 +84,7 @@
 			.state('baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa', {
 				url: '/baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa',
 				templateUrl: 'partials/baaabaabbbaaaaaababaaaaaaababaaaaaaababaaaaaaababaaaaaa.html',
-				data: { pageTitle: 'ProjectBeta 2019' },
+				data: { pageTitle: 'ProjectBeta 2020' },
 				onEnter: function() {
 					if (isMobile) {
 						setTimeout(sidebarClose, 100);
@@ -106,7 +106,18 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			})
-
+			.state('notifs', {
+				url: '/notifs',
+				templateUrl: 'partials/notifs.html',
+				data: { pageTitle: 'About \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
 			.state('contact', {
 				url: '/contact',
 				templateUrl: 'partials/contact.html',
@@ -119,7 +130,18 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			})
-
+.state('team2', {
+				url: '/team2',
+				templateUrl: 'partials/team2.html',
+				data: { pageTitle: 'Team \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
 			.state('team', {
 				url: '/team',
 				templateUrl: 'partials/team.html',
@@ -171,7 +193,42 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			})
-
+			.state('rd', {
+				url: '/rd',
+				templateUrl: 'partials/rd.html',
+				data: { pageTitle: 'Apply \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
+			.state('design', {
+				url: '/design',
+				templateUrl: 'partials/design.html',
+				data: { pageTitle: 'Apply \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
+			.state('interactive', {
+				url: '/interactive',
+				templateUrl: 'partials/interactive.html',
+				data: { pageTitle: 'Apply \u00B7 ProjectBeta' },
+				onEnter: function() {
+					if (isMobile) {
+						setTimeout(sidebarClose, 100);
+					}
+					mainEl.scroll(0,0);
+					uiContainer.style.justifyContent = "space-between";
+				}
+			})
 			.state('events', {
 				url: '/events',
 				templateUrl: 'partials/events.html',
@@ -184,6 +241,7 @@
 					uiContainer.style.justifyContent = "space-between";
 				}
 			});
+			
 		
 		$locationProvider.html5Mode(true);
 	});

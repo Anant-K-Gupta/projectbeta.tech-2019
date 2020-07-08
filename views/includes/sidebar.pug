@@ -38,7 +38,27 @@ section.sidebar.open
                             a(ui-sref="home").yellow home
 
                         li.level1
-                            a(ui-sref="team").blue team
+                              a(href="/team").blue.level2#eventTab
+                                #teamTriangle.triangle.open
+                                |team
+                        li.level2.team
+                            a(href="rd").white
+                                | Research / Development
+
+                        li.level2.team
+                            a(href="interactive").white
+                                | Interactive
+
+                        
+
+                        li.level2.team
+                            a(href="design").white
+                                | Design
+                        
+
+
+
+
                         li.level1
                             a(ui-sref="alumni").red alumni
 
@@ -69,8 +89,7 @@ section.sidebar.open
                         li.level1
                             a(ui-sref="betatest").blue betatest
                             
-                        li.level1
-                            a(ui-sref="leaderboard").red leaderboard
+                        
                         li.level1
                             a(href="/register" target="_self").green register
 
@@ -83,16 +102,7 @@ section.sidebar.open
 
                 ul.white
 
-                    a(ui-sref="register")
-                        li &mdash;&nbsp;&nbsp;&nbsp;Invites for 3.0 are out
-                    a(ui-sref="register")
-                        li &mdash;&nbsp;&nbsp;&nbsp;Register for ProjectBeta 3.0
-                    a(ui-sref="register")
-                        li &mdash;&nbsp;&nbsp;&nbsp;Registered teams have been sent the Slack channel credentials
-                    a(ui-sref="register")
-                        li &mdash;&nbsp;&nbsp;&nbsp;BetaTest starts tomorrow
-                    a(ui-sref="register")
-                        li &mdash;&nbsp;&nbsp;&nbsp;The Rush_B Prelims have been cancelled, please check Slack for more details
+                    
 
             .subject.flex
 
@@ -143,5 +153,5 @@ section.sidebar.open
         
         section#footer.flex
 
-            p © 2019 projectbeta
+            p © 2020 projectbeta
             p change the status quo
