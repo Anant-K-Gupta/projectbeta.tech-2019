@@ -54,45 +54,38 @@ function openCloseTabs(i) {
 	}
 }
 
-//Countdown
-function countdown () {
-	var end = new Date("2019-10-04T08:30:00+05:30")
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
 
-	var _second = 1000;
-	var _minute = _second * 60;
-	var _hour = _minute * 60;
-	var _day = _hour * 24;
-	var timer;
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-	var daysElement = document.querySelector('.days p');
-	var hoursElement = document.querySelector('.hours p');
-	var minutesElement = document.querySelector('.minutes p');
-	var secondsElement = document.querySelector('.seconds p');
-
-	function showRemaining() {
-		var now = new Date();
-		var distance = end - now;
-		if (distance < 0) {
-
-			clearInterval(timer);
-
-			return;
-		}
-		var days = Math.floor(distance / _day);
-		var hours = Math.floor((distance % _day) / _hour);
-		var minutes = Math.floor((distance % _hour) / _minute);
-		var seconds = Math.floor((distance % _minute) / _second);
-
-		days < 10 ? daysElement.innerHTML = "0" + days : daysElement.innerHTML = days;
-		hours < 10 ? hoursElement.innerHTML = "0" + hours : hoursElement.innerHTML = hours;
-		minutes < 10 ? minutesElement.innerHTML = "0" + minutes : minutesElement.innerHTML = minutes;
-		seconds < 10 ? secondsElement.innerHTML = "0" + seconds : secondsElement.innerHTML = seconds;
-	}
-
-	timer = setInterval(showRemaining, 1000);
-
-}
-countdown();
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("day").innerHTML = days;
+  document.getElementById("hour").innerHTML = hours;
+  document.getElementById("min").innerHTML = minutes;
+  document.getElementById("sec").innerHTML = seconds;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("day").innerHTML = "00";
+    document.getElementById("hour").innerHTML = "00";
+    document.getElementById("min").innerHTML = "00";
+    document.getElementById("sec").innerHTML = "00";
+  }
+}, 1000);	
 
 
 // Open-Close Sidebar
@@ -142,3 +135,7 @@ function sidebarClose() {
 
 hamburger.addEventListener('click', sidebarOpen);
 cross.addEventListener('click', sidebarClose);
+
+
+// Set the date we're counting down to
+

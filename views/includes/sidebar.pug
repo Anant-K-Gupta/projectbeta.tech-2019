@@ -68,20 +68,37 @@ section.sidebar.open
                                 |events
 
                         li.level2.events
-                            a(href="events#beta-test").white
+                            a(href="events#9").white
+                                | Function Overload
+
+                        li.level2.events
+                            a(href="events#8").white
+                                | HyperText{x}
+                        li.level2.events
+                            a(href="events#7").white
+                                | renderQ
+                        li.level2.events
+                            a(href="events#6").white
+                                | Ctrl+Alt+Create
+                        li.level2.events
+                            a(href="events#5").white
+                                | 64Wit
+                        li.level2.events
+                            a(href="events#4").white
                                 | Beta test
+                        li.level2.events
+                            a(href="events#3").white
+                                | (In)vested Interests
 
                         li.level2.events
-                            a(href="events#in-vested-interests").white
-                                | (in)Vested Interests
-
+                            a(href="events#2").white
+                                | Corporate Cabinet
                         li.level2.events
-                            a(href="events#function-overload").white
-                                | func(64 Wit)
-
+                            a(href="events#1").white
+                                | KiloHertz
                         li.level2.events
-                            a(href="events#rush-b").white
-                                | Rush_B
+                            a(href="events#0").white
+                                | SideQuest X Dual Wieldt
 
                         li.level1
                             a(ui-sref="contact").yellow contact
@@ -114,16 +131,16 @@ section.sidebar.open
                 .timer.flex
 
                     .days.flex
-                        p 00
+                        p#day 
                         h2 days
                     .hours.flex
-                        p 00
+                        p#hour 
                         h2 hours
                     .minutes.flex
-                        p 00
+                        p#min 
                         h2 minutes
                     .seconds.flex
-                        p 00
+                        p#sec 
                         h2 seconds
 
             .subject.flex
@@ -155,3 +172,36 @@ section.sidebar.open
 
             p © 2020 projectbeta
             p change the status quo
+
+
+
+script.
+    var countDownDate = new Date("Aug 21, 2020 00:00:00").getTime();
+
+
+    var x = setInterval(function() {
+
+
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+        
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("day").innerHTML = days;
+      document.getElementById("hour").innerHTML = hours;
+      document.getElementById("min").innerHTML = minutes;
+      document.getElementById("sec").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("day").innerHTML = "00";
+        document.getElementById("hour").innerHTML = "00";
+        document.getElementById("min").innerHTML = "00";
+        document.getElementById("sec").innerHTML = "00";
+      }
+    }, 1000);   
