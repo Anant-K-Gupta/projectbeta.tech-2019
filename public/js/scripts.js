@@ -44,19 +44,6 @@
                 mainEl.scroll(0, 0);
                 uiContainer.style.justifyContent = "space-between"
             }
-        }).state("betatest", {
-            url: "/betatest",
-            templateUrl: "partials/betatest.html",
-            data: {
-                pageTitle: "BetaTest \xB7 ProjectBeta"
-            },
-            onEnter: function onEnter() {
-                if (isMobile) {
-                    setTimeout(sidebarClose, 100)
-                }
-                mainEl.scroll(0, 0);
-                uiContainer.style.justifyContent = "space-between"
-            }
         }).state("home", {
             url: "/home",
             templateUrl: "partials/home.html",
